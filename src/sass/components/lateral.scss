@@ -1,0 +1,10 @@
+@use './global/library.scss';
+
+.lateral {
+	@include library.reset-list;
+	padding-top: 30px;
+}
+
+.lateral__item {
+	@include library.lateral-item;
+}

@@ -1,0 +1,33 @@
+@use './global/library.scss';
+
+$line-color: rgba(1, 23, 10, 0.1);
+
+.navigation-list {
+	@include library.reset-list;
+	padding: 48px 0;
+
+	display: grid;
+	grid-template-columns: auto;
+	gap: 20px;
+	
+	position: relative;
+
+	&::after {
+		content: '';
+		width: 100%;
+		height: 1px;
+		background-color: $line-color;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+.navigation__item {
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.navigation__link {
+	@include library.navigation-link;
+}

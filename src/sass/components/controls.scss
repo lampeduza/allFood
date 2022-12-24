@@ -1,0 +1,14 @@
+@use './global/library.scss';
+
+.controls {
+	@include library.reset-list;
+	display: flex;
+}
+
+.controls__item {
+	@include library.controls-item;
+}
+
+.controls__button {
+	@include library.controls-button;
+}

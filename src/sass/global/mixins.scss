@@ -18,3 +18,88 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@mixin navigation-link {
+  display: block;
+  font-size: 16px;
+  line-height: 19px;
+  color: inherit;
+  padding: 0 30px;
+}
+
+@mixin lateral-item {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+
+  a {
+    line-height: 16px;
+    color: inherit;
+    display: flex;
+    align-items: center;
+  }
+
+  svg {
+    margin-right: 12px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  &--info {
+    svg {
+      cursor: pointer;
+    }
+  }
+}
+
+@mixin component-with-shadow {
+  background-color: variables.$component-color;
+  border-radius: variables.$component-border-radius;
+  box-shadow: variables.$component-shadow;
+}
+
+@mixin component-without-shadow {
+  background-color: variables.$component-color;
+  border-radius: variables.$component-border-radius;
+}
+
+@mixin slider-component {
+  background-color: variables.$primary-bg-color;
+  border-radius: variables.$component-border-radius;
+  box-shadow: variables.$component-shadow;
+}
+
+@mixin slider-header {
+  font-size: 26px;
+  line-height: 130%;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+@mixin controls-item {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--current {
+    .controls__button {
+      background-color: variables.$control-background-active;
+    }
+  }
+}
+
+@mixin controls-button {
+  width: 10px;
+  height: 10px;
+  background-color: variables.$control-background;
+  border: none;
+  border-radius: 50%; 
+}
+
+
+
+
