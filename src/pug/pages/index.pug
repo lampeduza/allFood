@@ -1,19 +1,10 @@
-doctype html
-html(lang="ru-RU")
-  head
-    meta(charset="utf-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1")
-    meta(name="description" content="content")
-    link(rel="stylesheet" href="css/styles.css")
-    link(rel="preload" href="fonts/raleway/400.woff2" as="font" type="font/woff2" crossorigin)
-    link(rel="preload" href="fonts/raleway/500.woff2" as="font" type="font/woff2" crossorigin)
-    title AllFood | Продукты
-  body
-    include ../modules/navigation/navigation
-    include ../modules/slider/slider
-    include ../modules/filters/filters
-    include ../modules/aside/aside
-    main
-      include ../modules/recipes/recipes
-    include ../modules/load
-    include ../modules/footer/footer
+extends ../layout/layout
+block content
+  include ../modules/navigation/navigation
+  include ../modules/slider/slider
+  include ../modules/filters/filters
+  include ../modules/aside/aside
+  main
+    include ../modules/recipes/recipes
+  include ../modules/load
+  include ../modules/footer/footer
