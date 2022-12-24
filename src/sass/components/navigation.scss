@@ -1,6 +1,8 @@
 @use './global/library.scss';
 
 .navigation {
+	grid-column: span 1;
+	grid-row: span 3;
 	padding: 40px 0;
 	@include library.component-with-shadow
 }

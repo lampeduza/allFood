@@ -100,6 +100,12 @@
   border-radius: 50%; 
 }
 
+@mixin tag {
+  padding: 10px 15px;
+  border: 1px solid #31B768;
+  border-radius: 5px;
+  background-color: transparent;
+}
 
 
 

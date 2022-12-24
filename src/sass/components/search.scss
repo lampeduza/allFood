@@ -1,0 +1,34 @@
+.search__container {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+
+	input {
+		grid-column: 1 / -1;
+		grid-row: 1 / -1;
+		font-size: 14px;
+		line-height: 16px;
+		padding: 10px 60px 10px 15px;
+		border: 1px solid #31B768;
+		border-radius: 5px;
+
+		&::placeholder {
+			color: inherit;
+		}
+	}
+
+	button {
+		grid-column: 1 / -1;
+		grid-row: 1 / -1;
+		justify-self: end;
+		width: 54px;
+		height: 36px;
+		margin-top: 1px;
+		margin-right: 1px;
+
+		border: none;
+		border-radius: 0px 5px 5px 0;
+		background-color: transparent;
+		cursor: pointer;
+	}
+}

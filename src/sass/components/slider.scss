@@ -2,6 +2,7 @@
 
 .slider {
 	grid-column: span 4;
+	grid-row: span 2;
 	@include library.slider-component;
 
 	position: relative;

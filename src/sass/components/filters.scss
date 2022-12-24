@@ -1,0 +1,18 @@
+.filters {
+	grid-column: span 4;
+	display: grid;
+	grid-template-columns: repeat(4, 252px);
+	gap: 1px 30px;
+}
+
+.filters__sort {
+	grid-column: span 3;
+}
+
+.filters__search {
+	grid-column: span 1;
+}
+
+.filters__tags {
+	grid-column: span 4;
+}

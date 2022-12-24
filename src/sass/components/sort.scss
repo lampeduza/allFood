@@ -1,0 +1,28 @@
+@use './global/library.scss';
+
+.sort {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 20px;
+
+	p {
+		margin-top: 10px;
+	}
+}
+
+.sort__list {
+	@include library.reset-list;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sort__item {
+	margin-left: 20px;
+	margin-bottom: 14px;
+}
+
+.sort__button {
+	@include library.tag;
+	font-size: 14px;
+	line-height: 16px;
+}

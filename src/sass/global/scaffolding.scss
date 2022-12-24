@@ -25,12 +25,18 @@ body {
   background-color: library.$primary-bg-color;
   border-radius: library.$component-border-radius;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 252px);
+  grid-template-rows: repeat(10, 152px);
+
   gap: 40px 30px;
   padding: 30px;
   margin: 0 auto;
 
   max-width: 1440px;
+}
+
+.sitemap {
+  display: block;
 }
 
 a { text-decoration: none; }

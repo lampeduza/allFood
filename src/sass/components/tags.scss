@@ -1,0 +1,30 @@
+@use './global/library.scss';
+
+.tags {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 5px;
+
+	p {
+		margin-top: 25px;
+	}
+}
+
+.tags__list {
+	@include library.reset-list;
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.tags__item {
+	margin-left: 20px;
+	margin-top: 14px;
+}
+
+.tags__button {
+	@include library.tag;
+	font-size: 12px;
+	line-height: 14px;
+}

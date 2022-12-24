@@ -64,77 +64,80 @@
         </li>
       </ul>
     </section>
-    <section class="sort">
+    <section class="filters">
       <h2 class="visually-hidden">heading</h2>
-      <p>Сортировать по:</p>
-      <ul class="sort__list">
-        <li class="sort__item">
-          <button class="sort__button" type="button">Популярности</button>
-        </li>
-        <li class="sort__item">
-          <button class="sort__button" type="button">Каллорийности</button>
-        </li>
-        <li class="sort__item">
-          <button class="sort__button" type="button">Новизне</button>
-        </li>
-      </ul>
-    </section>
-    <div class="search">
-      <form class="search__form" action="url" method="post">
-        <div class="search__container">
-          <label class="visually-hidden" for="search-field">heading</label>
-          <input type="text" name="search-field" id="search-field" placeholder="Поиск">
-          <button type="button">
-            <svg width="16" height="16">
-              <use xlink:href="img/sprite.svg#search"></use>
-            </svg>
-          </button>
-        </div>
-      </form>
-    </div>
-    <section class="tags">
-      <p>Тэги:</p>
-      <ul class="tags__list">
-        <li class="tags__item">
-          <button class="tags__button" type="button">Омлет</button>
-        </li>
-        <li class="tags__item">
-          <button class="tags__button" type="button">Завтрак</button>
-        </li>
-        <li class="tags__item">
-          <button class="tags__button" type="button">Простой</button>
-        </li>
-        <li class="tags__item">
-          <button class="tags__button" type="button">Десерт</button>
-        </li>
-        <li class="tags__item">
-          <button class="tags__button" type="button">Бекон</button>
-        </li>
-        <li class="tags__item">
-          <button class="tags__button" type="button">Тунец</button>
-        </li>
-        <li class="tags__item">
-          <button class="tags__button" type="button">Лосось</button>
-        </li>
-        <li class="tags__item">
-          <button class="tags__button" type="button">Ребрышки</button>
-        </li>
-        <li class="tags__item">
-          <button class="tags__button" type="button">Закуски</button>
-        </li>
-        <li class="tags__item">
-          <button class="tags__button" type="button">Салаты</button>
-        </li>
-        <li class="tags__item">
-          <button class="tags__button" type="button">Курица</button>
-        </li>
-        <li class="tags__item">
-          <button class="tags__button" type="button">Праздничные блюда</button>
-        </li>
-        <li class="tags__item">
-          <button class="tags__button" type="button">Итальянская кухня</button>
-        </li>
-      </ul>
+      <section class="filters__sort sort">
+        <h2 class="visually-hidden">heading</h2>
+        <p>Сортировать по:</p>
+        <ul class="sort__list">
+          <li class="sort__item">
+            <button class="sort__button" type="button">Популярности</button>
+          </li>
+          <li class="sort__item">
+            <button class="sort__button" type="button">Каллорийности</button>
+          </li>
+          <li class="sort__item">
+            <button class="sort__button" type="button">Новизне</button>
+          </li>
+        </ul>
+      </section>
+      <div class="filters__search search">
+        <form class="search__form" action="url" method="post">
+          <div class="search__container">
+            <label class="visually-hidden" for="search-field">heading</label>
+            <input type="text" name="search-field" id="search-field" placeholder="Поиск">
+            <button type="button">
+              <svg width="16" height="16">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+      <section class="filters__tags tags">
+        <p>Тэги:</p>
+        <ul class="tags__list">
+          <li class="tags__item">
+            <button class="tags__button" type="button">Омлет</button>
+          </li>
+          <li class="tags__item">
+            <button class="tags__button" type="button">Завтрак</button>
+          </li>
+          <li class="tags__item">
+            <button class="tags__button" type="button">Простой</button>
+          </li>
+          <li class="tags__item">
+            <button class="tags__button" type="button">Десерт</button>
+          </li>
+          <li class="tags__item">
+            <button class="tags__button" type="button">Бекон</button>
+          </li>
+          <li class="tags__item">
+            <button class="tags__button" type="button">Тунец</button>
+          </li>
+          <li class="tags__item">
+            <button class="tags__button" type="button">Лосось</button>
+          </li>
+          <li class="tags__item">
+            <button class="tags__button" type="button">Ребрышки</button>
+          </li>
+          <li class="tags__item">
+            <button class="tags__button" type="button">Закуски</button>
+          </li>
+          <li class="tags__item">
+            <button class="tags__button" type="button">Салаты</button>
+          </li>
+          <li class="tags__item">
+            <button class="tags__button" type="button">Курица</button>
+          </li>
+          <li class="tags__item">
+            <button class="tags__button" type="button">Праздничные блюда</button>
+          </li>
+          <li class="tags__item">
+            <button class="tags__button" type="button">Итальянская кухня</button>
+          </li>
+        </ul>
+      </section>
     </section>
     <section class="aside">
       <h2 class="visually-hidden">heading</h2>
