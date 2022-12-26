@@ -43,7 +43,7 @@ body {
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(5, 252px);
-  grid-template-rows: repeat(10, 152px);
+  grid-auto-row: 152px;
   gap: 40px 30px;
   padding: 30px;
   margin: 0 auto;
@@ -441,7 +441,6 @@ picture {
   line-height: 135%;
   -webkit-box-ordinal-group: 4;
           order: 3;
-  margin-bottom: 20px;
   padding: 0 10px;
 }
 .card:not(.card--mini) a {
@@ -488,6 +487,12 @@ picture {
   position: absolute;
   bottom: 20px;
   left: 20px;
+}
+.card--bigger p {
+  margin-bottom: 20px;
+}
+.card--description p {
+  margin-bottom: 25px;
 }
 
 .description form {
