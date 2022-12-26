@@ -3,16 +3,16 @@ ul.aside__list
 		article.aside__card.card.card--mini
 			h3 Детокс-курс на неделю
 			picture
-				img(src="img/aside/image-1.jpg" srcset="img/aside/image-1@2x.jpg 2x" width="312" height="212" alt="description" title="description")
+				img(src=`${imgCardPath}image-1.jpg` srcset=`${imgCardPath}image-1@2x.jpg 2x` width="252" height="152" alt="description" title="description")
 			a(href="#") Подробнее
 	li.aside__item
-		article.aside__card.card.card--bigger
+		article.aside__card.card
 			h3 Праздничное меню
 			p
 				.
 					Полное меню на любой праздник: горячее, салаты, закуски и дессерт
 			picture
-				img(src="img/aside/image-2.jpg" srcset="img/aside/image-2@2x.jpg 2x" width="232" height="165" alt="description" title="description")
+				img(src=`${imgCardPath}image-2.jpg` srcset=`${imgCardPath}image-2@2x.jpg 2x` width="232" height="165" alt="description" title="description")
 			a(href="#") Подробнее
 	li.aside__item
 		include aside-description

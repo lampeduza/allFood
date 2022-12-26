@@ -1,10 +1,22 @@
 extends ../layout/layout
+
+block variables
+  - var title = 'allFood';
+  - var imgSliderPath = 'img/slider/';
+  - var imgCardPath = 'img/aside/';
+  - var pageClass = 'main-content';
+
+  //- for example
+  - var imgDescriptionPath = 'img/aside/';
+  - var imgRecipeLargePath = 'img/recipes/large/';
+  - var imgRecipeSmallPath = 'img/recipes/small/';
+
 block content
   include ../modules/navigation/navigation
   include ../modules/slider/slider
   include ../modules/filters/filters
   include ../modules/aside/aside
-  main
+  main(class=pageClass)
     include ../modules/recipes/recipes
-  include ../modules/load
-  include ../modules/footer/footer
+  //- include ../modules/load
+  //- include ../modules/footer/footer

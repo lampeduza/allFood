@@ -1,0 +1,71 @@
+@use './global/library.scss';
+
+.recipe {
+	display: flex;
+	flex-direction: column;
+	@include library.component-with-shadow;
+	padding-bottom: 20px;
+
+	picture {
+		margin-bottom: 10px;
+	}
+
+	img {
+		order: 1;
+	}
+
+	h3 {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 130%;
+		margin-bottom: 8px;
+		order: 2;
+	}
+
+	p {
+		margin-bottom: 29px;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 135%;
+		order: 3;
+	}
+
+	&:not(&--minimal) {
+		p {
+			padding: 0 20px;
+			margin-bottom: 20px;
+		}
+
+		h3 {
+			padding: 0 20px;
+		}
+	}
+
+	&:not(&--minimal) {
+		.additional-list {
+			padding: 0 20px;
+		}
+	}
+
+	&:not(&--large) {
+		.additional-list {
+			justify-content: space-between;
+		}
+	}
+
+	&--minimal {
+		padding: 5px;
+
+		.recipe__container {
+			padding: 15px;
+			border-radius: 10px;
+			border: 1px dashed #31B768;
+		}
+	}
+
+	&--large {
+		.additional-list__item {
+			margin-right: 24px;
+		}
+	}
+}

@@ -7,6 +7,12 @@
 
 .controls__item {
 	@include library.controls-item;
+
+	&:not(&--current) {
+		.controls__button {
+			cursor: pointer;
+		}
+	}
 }
 
 .controls__button {

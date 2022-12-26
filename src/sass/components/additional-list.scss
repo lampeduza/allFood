@@ -1,0 +1,21 @@
+@use './global/library.scss';
+
+.additional-list {
+	@include library.reset-list;
+	display: flex;
+	flex-wrap: wrap;
+
+	order: 4;
+}
+
+.additional-list__item {
+	display: flex;
+	align-items: center;
+
+	span {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 14px;
+		margin-left: 8px;
+	}
+}

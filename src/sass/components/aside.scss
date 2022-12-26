@@ -1,0 +1,8 @@
+@use './global/library.scss';
+
+.aside__list {
+	@include library.reset-list;
+
+	display: grid;
+	gap: 40px;
+}
