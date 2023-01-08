@@ -1,15 +1,20 @@
 extends ../layout/layout
 
+//- mixins
+include ../utils/icon
+include ../utils/picture
+include ../mixins/navigation-logo
+include ../mixins/navigation-lateral
+include ../mixins/slide
+include ../mixins/slider-control
+include ../mixins/filters-tags
+include ../mixins/filters-sort
+include ../mixins/filters-search
+include ../mixins/additional-list
+
 block variables
   - var title = 'allFood';
-  - var imgSliderPath = 'img/slider/';
-  - var imgCardPath = 'img/aside/';
   - var pageClass = 'main-content';
-
-  //- for example
-  - var imgDescriptionPath = 'img/aside/';
-  - var imgRecipeLargePath = 'img/recipes/large/';
-  - var imgRecipeSmallPath = 'img/recipes/small/';
 
 block content
   include ../modules/navigation/navigation
@@ -18,5 +23,7 @@ block content
   include ../modules/aside/aside
   main(class=pageClass)
     include ../modules/recipes/recipes
+  include ../modules/load
+  include ../modules/footer/footer
   //- include ../modules/load
   //- include ../modules/footer/footer

@@ -1,0 +1,13 @@
+mixin navigation-lateral(data = [])
+  ul.navigation__lateral.lateral
+    each item in data.list
+      if !item.info
+        li.lateral__item
+          +icon('user', '16', '18')
+          a.lateral__link(href= item.enterAnchor)!= item.enterText
+          a.lateral__link(href= item.registrationAnchor)!= item.registrationText
+      else
+        li.lateral__item.lateral__item--info
+          a.lateral__link
+            +icon('info', '18', '18')
+            | #{item.text}

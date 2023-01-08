@@ -1,0 +1,8 @@
+mixin filters-sort(sort = {})
+	section.filters__sort.sort
+		h2.visually-hidden= sort.title
+		p= sort.text
+		ul.sort__list
+			each element, index in sort.list
+				li.sort__item
+					button.sort__button(type="button")= element

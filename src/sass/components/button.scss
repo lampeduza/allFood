@@ -1,0 +1,14 @@
+@use './global/library.scss';
+
+$button-color: #ffffff;
+
+.button {
+	width: 100%;
+	background-color: library.$button-bg-color;
+	color: $button-color;
+	font-weight: 600;
+	border: none;
+	border-radius: library.$component-border-radius;
+	cursor: pointer;
+	user-select: none;
+}

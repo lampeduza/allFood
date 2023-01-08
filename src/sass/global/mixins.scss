@@ -195,6 +195,39 @@
   }
 
   &--description {
+    form {
+      width: 100%;
+      order: 5;
+
+      display: grid;
+      grid-template-rows: auto;
+      gap: 15px;
+    }
+
+    input {
+      font-size: 12px;
+      line-height: 14px;
+      padding: 11px;
+      border: 1px solid variables.$input-border-color;
+      border-radius: variables.$input-border-radius;
+
+      &::placeholder {
+        color: #01170A;
+        opacity: 0.3;
+      }
+    }
+
+    button {
+      font-size: 12px;
+      line-height: 14px;
+      padding: 11px;
+      border: none;
+      border-radius: variables.$button-border-radius;
+      background-color: variables.$button-bg-color;
+      color: variables.$button-color;
+      cursor: pointer;
+    }
+
     p {
       margin-bottom: 25px;
     }

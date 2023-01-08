@@ -1,0 +1,32 @@
+.footer {
+	grid-column: 1 / -1;
+	display: grid;
+	grid-template-columns: 1fr auto;
+	align-items: center;
+	border-top: 1px solid rgba(1, 23, 10, 0.1);
+	padding-top: 25px;
+}
+
+.footer__content {
+	display: flex;
+
+	p {
+		margin-right: 20px;
+	}
+
+	a {
+		color: inherit;
+		position: relative;
+
+		&::after {
+			content: '';
+			width: 100%;
+			background-color: #01170A;
+			height: 1px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+	}
+}

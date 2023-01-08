@@ -1,0 +1,8 @@
+mixin filters-tags(tags = {})
+  section.filters__tags.tags
+    p= tags.title
+    ul.tags__list
+      each tag in tags.list
+        li.tags__item
+          button.tags__button(type="button")= tag
+

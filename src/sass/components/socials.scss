@@ -1,0 +1,48 @@
+@use './global/library.scss';
+
+$pinterest-background: #E60023;
+$facebook-background: #1877F2;
+$youtube-background: #FF0000;
+$instagram-background: #F00073;
+
+.socials {
+	@include library.reset-list;
+	display: grid;
+	grid-template-columns: repeat(4, 32px);
+	gap: 20px;
+}
+
+.socials__social {
+	&--pinterest {
+		a {
+			background-color: $pinterest-background;
+		}
+	}
+
+	&--facebook {
+		a {
+			background-color: $facebook-background;
+		}
+	}
+
+	&--youtube {
+		a {
+			background-color: $youtube-background;
+		}
+	}
+
+	&--instagram {
+		a {
+			background-color: $instagram-background;
+		}
+	}
+}
+
+.socials__link {
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+}

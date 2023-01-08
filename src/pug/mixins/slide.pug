@@ -1,0 +1,6 @@
+mixin slide(slide)
+	li.slider__item
+		+picture('slider', 'slider-item-1', 'jpg', '1098', '404', 'description', 'description')
+		.slider__content
+			h2= slide.title
+			p= slide.description

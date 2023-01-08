@@ -1,21 +1,27 @@
+include aside-list-data
+
 ul.aside__list
-	li.aside__item
-		article.aside__card.card.card--mini
-			h3 Детокс-курс на неделю
-			picture
-				img(src=`${imgCardPath}image-1.jpg` srcset=`${imgCardPath}image-1@2x.jpg 2x` width="252" height="152" alt="description" title="description")
-			a(href="#") Подробнее
-	li.aside__item
-		article.aside__card.card.card--bigger
-			h3 Праздничное меню
-			p
-				.
-					Полное меню на любой праздник: горячее, салаты, закуски и дессерт
-			picture
-				img(src=`${imgCardPath}image-2.jpg` srcset=`${imgCardPath}image-2@2x.jpg 2x` width="232" height="165" alt="description" title="description")
-			a(href="#") Подробнее
-	li.aside__item
-		include aside-description
+  each card in cards
+    li.aside__item
+      article.aside__card.card(class=( card.mini ? 'card--mini' : card.bigger ? 'card--bigger' : card.subscribe ? 'card--description' : '' ))
+        h3 !{card.heading}
+        if card.mini
+          +picture('aside', 'image-1', 'jpg', '252', '152', 'description', 'description')
+        else if card.bigger
+          +picture('aside', 'image-2', 'jpg', '232', '165', 'description', 'description')
+        else
+          +picture('aside', 'image-3', 'jpg', '232', '252', 'description', 'description')
+          form
+            each item in card.field
+              label.visually-hidden(for= item.label.relation)= item.label.label
+              input#email-field(type= item.input.type, name= item.input.name, placeholder= item.input.placeholder, required= item.input.required)
+            button(type="submit")= card.subscription
+
+        if !card.mini
+          p= card.text
+
+        if !card.subscribe
+          a(href= card.anchor) Подробнее
 
 
 

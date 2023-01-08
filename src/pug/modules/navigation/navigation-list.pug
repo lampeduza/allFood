@@ -1,15 +1,7 @@
-ul.navigation__list.navigation-list
-	li.navigation__item
-		a.navigation__link(href="#") Горячее
-	li.navigation__item
-		a.navigation__link(href="#") Завтраки
-	li.navigation__item
-		a.navigation__link(href="#") Салаты
-	li.navigation__item
-		a.navigation__link(href="#") Закуски
-	li.navigation__item
-		a.navigation__link(href="#") Десерты
-	li.navigation__item
-		a.navigation__link(href="#") Напитки
-	li.navigation__item
-		a.navigation__link(href="#") Статьи
+include navigation-list-data
+
+mixin navigation-list(navigation = [])
+  ul.navigation__list.navigation-list
+    each element in navigation
+      li.navigation__item
+        a.navigation__link(href= element.anchor)= element.value

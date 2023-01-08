@@ -1,0 +1,11 @@
+mixin additional-list(recipes = [])
+  ul.recipe__additional-list.additional-list
+    each item in recipes.additionalList
+      li.additional-list__item
+        if item.type === 'heart'
+          +icon('heart', '16', '14')
+        else if item.type === 'timer'
+          +icon('timer', '15', '16')
+        else if item.type === 'energy'
+          +icon('energy', '11', '16')
+        span= (item.type === 'heart' ? item.text : item.type === 'timer' ? item.text + ' мин' : item.type === 'energy' ? item.text + ' ккал' : '')

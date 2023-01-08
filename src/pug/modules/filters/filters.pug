@@ -1,5 +1,8 @@
+include filters-tags-data
+include filters-sort-data
+
 section.filters
   h2.visually-hidden heading
-  include filters-sort
-  include filters-search
-  include filters-tags
+  +filters-sort(sort)
+  +filters-search
+  +filters-tags(tags)

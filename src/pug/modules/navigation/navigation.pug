@@ -1,4 +1,7 @@
+include navigation-list
+include navigation-lateral-data
+
 nav.navigation
-	include navigation-logo
-	include navigation-list
-	include navigation-lateral
+  +navigation-logo
+  +navigation-list(navigation)
+  +navigation-lateral(data)

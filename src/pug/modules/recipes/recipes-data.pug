@@ -1,0 +1,286 @@
+-
+  var recipes = [
+    {
+      large: true,
+      heading: 'Рулетики из бекона',
+      text: 'Ужасно вкусно. Сытно! Просто и супер универсально. Ведь такое блюдо можно подавать не только в будни, но и на праздники. Его можно подавать и как самостоятельное, и как закуску, добавить любой гарнир ...',
+      additionalList: [
+        {
+          type: 'heart',
+          text: '220'
+        },
+        {
+          type: 'timer',
+          text: '35'
+        },
+        {
+          type: 'energy',
+          text: '150'
+        }
+      ],
+      img: {
+        path: 'large-1',
+        width: '534',
+        height: '192',
+        description: 'description',
+        title: 'title'
+      }
+    },
+    {
+      minimal: true,
+      heading: 'Омлет-рулет',
+      text: 'Аппетитный омлет с кабачком и большим количеством ...',
+      additionalList: [
+        {
+          type: 'heart',
+          text: '510'
+        },
+        {
+          type: 'timer',
+          text: '10'
+        },
+        {
+          type: 'energy',
+          text: '55'
+        }
+      ]
+    },
+    {
+      small: true,
+      heading: 'Стейк из лосося',
+      text: 'Лосось обладает очень нежным, мягким вкусом и восхитителен сам по себе ...',
+      additionalList: [
+        {
+          type: 'heart',
+          text: '195'
+        },
+        {
+          type: 'timer',
+          text: '20'
+        },
+        {
+          type: 'energy',
+          text: '88'
+        }
+      ],
+      img: {
+        path: 'small-1',
+        width: '252',
+        height: '192',
+        description: 'description',
+        title: 'title'
+      }
+    },
+    {
+      minimal: true,
+      heading: 'Куриные наггетсы',
+      text: 'Наггетсы из куриной грудки придутся по вкусу всем без ...',
+      additionalList: [
+        {
+          type: 'heart',
+          text: '260'
+        },
+        {
+          type: 'timer',
+          text: '20'
+        },
+        {
+          type: 'energy',
+          text: '138'
+        }
+      ]
+    },
+    {
+      large: true,
+      heading: 'Пицца Маргарита',
+      text: 'Традиционное итальянское блюде, известное во всем мире. Ее состав очень простой, но вкус не оставляет равнодушным. Понадобится совсем небольшой перечень ингредиентов, но важно использовать именно те ...',
+      additionalList: [
+        {
+          type: 'heart',
+          text: '260'
+        },
+        {
+          type: 'timer',
+          text: '25'
+        },
+        {
+          type: 'energy',
+          text: '220'
+        }
+      ],
+      img: {
+        path: 'large-2',
+        width: '534',
+        height: '192',
+        description: 'description',
+        title: 'title'
+      }
+    },
+    {
+      small: true,
+      heading: 'Сочные ребрышки',
+      text: 'Этот ароматный сладкий соус-маринад для рёбрышек неотличим от соуса, который ...',
+      additionalList: [
+        {
+          type: 'heart',
+          text: '80'
+        },
+        {
+          type: 'timer',
+          text: '60'
+        },
+        {
+          type: 'energy',
+          text: '260'
+        }
+      ],
+      img: {
+        path: 'small-2',
+        width: '252',
+        height: '192',
+        description: 'description',
+        title: 'title'
+      }
+    },
+    {
+      small: true,
+      heading: 'Салат с тунцом',
+      text: 'Свежий взгляд на популярный рыбный салат с обжаренным тунцом, овощами и зеленью ...',
+      additionalList: [
+        {
+          type: 'heart',
+          text: '412'
+        },
+        {
+          type: 'timer',
+          text: '20'
+        },
+        {
+          type: 'energy',
+          text: '85'
+        }
+      ],
+      img: {
+        path: 'small-3',
+        width: '252',
+        height: '192',
+        description: 'description',
+        title: 'title'
+      }
+    },
+    {
+      minimal: true,
+      heading: 'Салат из фасоли',
+      text: 'Сочный, вкусный и достаточно сытный салат из фасоли и ...',
+      additionalList: [
+        {
+          type: 'heart',
+          text: '132'
+        },
+        {
+          type: 'timer',
+          text: '20'
+        },
+        {
+          type: 'energy',
+          text: '85'
+        }
+      ]
+    },
+    {
+      small: true,
+      heading: 'Салат с креветками',
+      text: 'Довольно изысканное блюдо, которое часто подают в ресторанах, готовится очень ...',
+      additionalList: [
+        {
+          type: 'heart',
+          text: '640'
+        },
+        {
+          type: 'timer',
+          text: '15'
+        },
+        {
+          type: 'energy',
+          text: '105'
+        }
+      ],
+      img: {
+        path: 'small-4',
+        width: '252',
+        height: '192',
+        description: 'description',
+        title: 'title'
+      }
+    },
+    {
+      large: true,
+      heading: 'Тосты с авокадо и шпинатом',
+      text: 'Быстрый и очень полезный завтрак с высоким содержанием насыщенных жиров и клетчатки. Для тоста рекомендуем выбирать цельнозерновой хлеб, а авокадо сорта Хаас. Можно добавить другие...',
+      additionalList: [
+        {
+          type: 'heart',
+          text: '750'
+        },
+        {
+          type: 'timer',
+          text: '5'
+        },
+        {
+          type: 'energy',
+          text: '170'
+        }
+      ],
+      img: {
+        path: 'large-2',
+        width: '534',
+        height: '192',
+        description: 'description',
+        title: 'title'
+      }
+    },
+    {
+      minimal: true,
+      heading: 'Сырные кексы',
+      text: 'Отличное дополнение к первым блюдам, к чаю или ...',
+      additionalList: [
+        {
+          type: 'heart',
+          text: '222'
+        },
+        {
+          type: 'timer',
+          text: '35'
+        },
+        {
+          type: 'energy',
+          text: '147'
+        }
+      ]
+    },
+  ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
