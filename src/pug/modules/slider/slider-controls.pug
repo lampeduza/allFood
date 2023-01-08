@@ -1,6 +1,3 @@
 ul.slider__controls.controls
-	+slider-control(true)
-	+slider-control()
-	+slider-control()
-	+slider-control()
-	+slider-control()
+	each slide in slider.slides
+		+slider-control(slide.active)
