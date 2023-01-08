@@ -143,6 +143,27 @@ picture {
     font-size: 28px;
   }
 }
+.button {
+  width: 100%;
+  background-color: #31B768;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.tag {
+  padding: 10px 15px;
+  border: 1px solid #31B768;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .navigation {
   grid-column: span 1;
   grid-row: span 3;
@@ -359,13 +380,8 @@ picture {
 }
 
 .sort__button {
-  padding: 10px 15px;
-  border: 1px solid #31B768;
-  border-radius: 5px;
-  background-color: transparent;
   font-size: 14px;
   line-height: 16px;
-  cursor: pointer;
 }
 
 .search__container {
@@ -503,7 +519,7 @@ picture {
   font-size: 12px;
   line-height: 14px;
   padding: 11px;
-  border: 1px solid #01170A;
+  border: 1px solid rgba(1, 23, 10, 0.2);
   border-radius: 5px;
 }
 .card--description input::-webkit-input-placeholder {
@@ -521,12 +537,8 @@ picture {
 .card--description button {
   font-size: 12px;
   line-height: 14px;
-  padding: 11px;
-  border: none;
+  padding: 12px;
   border-radius: 5px;
-  background-color: #31B768;
-  color: #ffffff;
-  cursor: pointer;
 }
 .card--description p {
   margin-bottom: 25px;
@@ -558,13 +570,8 @@ picture {
 }
 
 .tags__button {
-  padding: 10px 15px;
-  border: 1px solid #31B768;
-  border-radius: 5px;
-  background-color: transparent;
   font-size: 12px;
   line-height: 14px;
-  cursor: pointer;
 }
 
 .main-content {
@@ -684,19 +691,6 @@ picture {
   font-size: 16px;
   line-height: 19px;
   margin-bottom: 94px;
-}
-
-.button {
-  width: 100%;
-  background-color: #31B768;
-  color: #ffffff;
-  font-weight: 600;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
 }
 
 .footer {

@@ -2,6 +2,8 @@
 @use './global/scaffolding.scss';
 @use './global/visually-hidden.scss';
 @use './global/map.scss';
+@use './components/button.scss';
+@use './components/tag.scss';
 @use './components/navigation.scss';
 @use './components/navigation-list.scss';
 @use './components/lateral.scss';
@@ -19,6 +21,5 @@
 @use './components/recipe.scss';
 @use './components/additional-list.scss';
 @use './components/load.scss';
-@use './components/button.scss';
 @use './components/footer.scss';
 @use './components/socials.scss';

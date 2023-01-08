@@ -4,5 +4,5 @@ mixin filters-tags(tags = {})
     ul.tags__list
       each tag in tags.list
         li.tags__item
-          button.tags__button(type="button")= tag
+          button.tags__button.tag(type="button")= tag
 

@@ -1,0 +1,6 @@
+@use './global/library.scss';
+
+.tag {
+	@include library.tag;
+	cursor: pointer;
+}

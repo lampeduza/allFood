@@ -15,7 +15,7 @@ ul.aside__list
             each item in card.field
               label.visually-hidden(for= item.label.relation)= item.label.label
               input#email-field(type= item.input.type, name= item.input.name, placeholder= item.input.placeholder, required= item.input.required)
-            button(type="submit")= card.subscription
+            button.card__button.button(type="submit")= card.subscription
 
         if !card.mini
           p= card.text
